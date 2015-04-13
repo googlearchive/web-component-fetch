@@ -11,7 +11,6 @@
 'use strict';
 var commander = require('commander');
 var concat = require('gulp-concat');
-var debug = require('gulp-debug');
 var del = require('del');
 var fs = require('fs');
 var gulp = require('gulp');
