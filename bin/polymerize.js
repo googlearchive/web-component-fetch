@@ -44,14 +44,14 @@ console.log(outfile);
 console.log(commander.args);
 
 function vulcanize(filename, outfile, root) {
-  var cmd =  path.join(__dirname + '../node_modules/vulcanize/bin/vulcanize');
+  var cmd =  path.join(__dirname,  '../node_modules/vulcanize/bin/vulcanize');
   cmd = cmd + ' ' + filename + ' > ' + outfile;
   console.log(cmd);
   return cmd
 }
 
 function bower(args) {
-  var cmd = path.join(__dirname + '../node_modules/bower/bin/bower ');
+  var cmd = path.join(__dirname, '../node_modules/bower/bin/bower ');
   return cmd + args
 }
 
