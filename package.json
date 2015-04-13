@@ -1,0 +1,35 @@
+{
+  "name": "polymerize",
+  "version": "0.0.1",
+  "description": "Quick production polymers.",
+  "bin": {
+    "polymerize": "bin/polymerize.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PolymerLabs/polymerize.git"
+  },
+  "author": "",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/PolymerLabs/polymerize/issues"
+  },
+  "homepage": "https://github.com/PolymerLabs/polymerize",
+  "dependencies": {
+    "bower": "^1.4.1",
+    "commander": "^2.7.1",
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
+    "gulp-filter": "^2.0.2",
+    "gulp-replace": "^0.5.3",
+    "gulp-shell": "^0.4.0",
+    "main-bower-files": "^2.6.2",
+    "polyclean": "0.0.1",
+    "through2": "^0.6.5",
+    "vulcanize": "^1.1.0"
+  }
+}
