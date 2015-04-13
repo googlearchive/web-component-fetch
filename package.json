@@ -12,7 +12,7 @@
     "type": "git",
     "url": "https://github.com/PolymerLabs/polymerize.git"
   },
-  "author": "",
+  "author": "The Polymer Project Authors",
   "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/PolymerLabs/polymerize/issues"
