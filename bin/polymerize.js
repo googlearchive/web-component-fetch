@@ -14,6 +14,7 @@ var concat = require('gulp-concat');
 var del = require('del');
 var fs = require('fs');
 var gulp = require('gulp');
+var gutil = require('gulp-util');
 var filter = require('gulp-filter');
 var mainBowerFiles = require('main-bower-files');
 var path = require('path');
@@ -26,6 +27,7 @@ var gulpsettings = require('../lib/gulpsettings');
 
 commander
   .usage('[options] <components...>')
+  .option('-u, --uglify', 'uglify your JS')
   .option('-d, --workdir [dir]', 'sets directory used for polymerization. Defaults to polymers/')
   .option('-m, --mainfile [file]', 'Sets debug main file. Defaults to main.html')
   .option('-p, --outfile [file]', 'Sets the output file. Defaults to polymers.html')
@@ -39,6 +41,7 @@ var outfile = commander.outfile;
 if (!outfile) {
   outfile = "polymers.html";
 }
+console.log(commander.uglify);
 console.log(workdir);
 console.log(outfile);
 console.log(commander.args);
@@ -107,6 +110,7 @@ gulp.task('polish', ['vulcanize'], function() {
     .pipe(replace(/\n\s*\n/g, '\n'))
     // Collapse leading spaces+tabs.
     .pipe(replace(/^[ \t]+/gm, ''))
+    .pipe(commander.uglify ? polyclean.uglifyJs() : gutil.noop())
     .pipe(gulp.dest(process.cwd()));
 });
 

@@ -27,6 +27,7 @@
     "gulp-filter": "^2.0.2",
     "gulp-replace": "^0.5.3",
     "gulp-shell": "^0.4.0",
+    "gulp-util": "^3.0.4",
     "main-bower-files": "^2.6.2",
     "polyclean": "0.0.1",
     "through2": "^0.6.5",
