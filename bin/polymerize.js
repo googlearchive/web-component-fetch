@@ -112,4 +112,4 @@ gulp.task('polish', ['vulcanize'], function() {
 });
 
 
-gulp.start('vulcanize');
+gulp.start('polish');
