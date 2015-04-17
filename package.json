@@ -1,23 +1,23 @@
 {
-  "name": "polymerize",
+  "name": "web-component-fetch",
   "version": "0.1.1",
   "description": "Quick production polymers.",
   "bin": {
-    "polymerize": "bin/polymerize.js"
+    "web-component-fetch": "bin/web-component-fetch.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/PolymerLabs/polymerize.git"
+    "url": "https://github.com/PolymerLabs/web-component-fetch.git"
   },
   "author": "The Polymer Project Authors",
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/PolymerLabs/polymerize/issues"
+    "url": "https://github.com/PolymerLabs/web-component-fetch/issues"
   },
-  "homepage": "https://github.com/PolymerLabs/polymerize",
+  "homepage": "https://github.com/PolymerLabs/web-component-fetch",
   "dependencies": {
     "bower": "^1.4.1",
     "commander": "^2.7.1",
