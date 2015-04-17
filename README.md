@@ -1,9 +1,9 @@
-# Polymerize
+# web-component-fetch
 
 To use:
 ```
-npm install
-./bin/polymerize.js \
+npm install -g web-component-fetch
+web-component-fetch \
     Polymer/paper-button#0.8-addmain \
     Polymer/font-roboto#bowerjson \
     Polymer/core-icons#0.8-bowermain
